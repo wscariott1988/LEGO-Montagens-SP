@@ -16,20 +16,22 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:url" content="https://legomontagens.com.br/">
-  <meta property="og:image" content="https://legomontagens.com.br/Public/Hero.png">
+  <meta property="og:image" content="https://legomontagens.com.br/Public/Hero.webp">
   <meta property="og:site_name" content="Lego Montagem de Móveis">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Lego Montagem de Móveis | ABC Paulista e São Paulo">
   <meta name="twitter:description" content="Montagem profissional de móveis no ABC Paulista e Grande São Paulo. Pontualidade, limpeza e garantia de ajuste.">
-  <meta name="twitter:image" content="https://legomontagens.com.br/Public/Hero.png">
+  <meta name="twitter:image" content="https://legomontagens.com.br/Public/Hero.webp">
 
   <!-- Theme Color -->
   <meta name="theme-color" content="#F07120">
 
-  <!-- ===== FAVICON SVG INLINE ===== -->
+  <!-- ===== FAVICON ===== -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%23F07120%27/%3E%3Crect x=%276%27 y=%226%27 width=%278%27 height=%2213%27 rx=%272%27 fill=%27white%27/%3E%3Crect x=%2718%27 y=%276%27 width=%228%27 height=%2213%27 rx=%272%27 fill=%27white%27/%3E%3Crect x=%226%27 y=%2221%27 width=%2220%27 height=%222.5%27 rx=%271%27 fill=%27white%27 opacity=%270.7%27/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" sizes="32x32" href="Public/logo.png">
+  <link rel="apple-touch-icon" href="Public/logo.png">
 
   <!-- ===== PRELOAD FONTS (auto-hospedadas) ===== -->
   <!-- INSTRUCAO: Baixe Inter.woff2 em https://fonts.google.com/specimen/Inter e coloque em Public/fonts/ -->
@@ -40,8 +42,8 @@
 
   <!-- ===== PRELOAD IMAGEM LCP (Largest Contentful Paint) ===== -->
   <link rel="preload" as="image" fetchpriority="high"
-        href="Public/Hero.png"
-        imagesrcset="Public/Hero-mobile.png 400w, Public/Hero.png 700w"
+        href="Public/Hero.webp"
+        imagesrcset="Public/Hero-mobile.webp 400w, Public/Hero.webp 700w"
         imagesizes="(max-width: 768px) 100vw, 50vw">
 
   <!-- ===== CSS CRITICO INLINE (Header + Hero — acima da dobra) ===== -->
@@ -364,10 +366,10 @@
       <!-- Imagem LCP (Largest Contentful Paint) — otimizada -->
       <div class="hero__img-wrap">
         <picture>
-          <source media="(max-width: 768px)" srcset="Public/Hero-mobile.png" type="image/png">
-          <source srcset="Public/Hero.png" type="image/png">
+          <source media="(max-width: 768px)" srcset="Public/Hero-mobile.webp" type="image/webp">
+          <source srcset="Public/Hero.webp" type="image/webp">
           <img
-            src="Public/Hero.png"
+            src="Public/Hero.webp"
             alt="Profissional Lego Montagens montando um guarda-roupa na Grande São Paulo"
             width="700" height="875"
             fetchpriority="high"

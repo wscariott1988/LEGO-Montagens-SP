@@ -531,4 +531,6 @@
   .wa-float { padding: 14px; border-radius: 50%; width: 60px; height: 60px; justify-content: center; }
   .cta-sec__title { font-size: 28px; }
   .cta-stat__n { font-size: 32px; }
+  .section-cta { display: flex; justify-content: center; }
+  .section-cta .btn-primary { width: 100%; max-width: 340px; justify-content: center; }
 }

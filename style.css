@@ -1,5 +1,5 @@
 /* ================================================================
-   LEGO MONTAGEM DE MOVEIS — style.css
+   LEGO MONTAGEM DE MÓVEIS — style.css
    CSS Secundario: tudo ABAIXO da dobra inicial (header + hero
    ja estao inlined no <head> do index.html para max performance)
    ================================================================ */
@@ -125,7 +125,7 @@
   line-height: 1.7;
 }
 
-/* === SERVICOS === */
+/* === SERVIÇOS === */
 .servicos {
   padding: 88px 0;
   background: var(--bg-soft);
@@ -185,7 +185,7 @@
   border-radius: 50%;
 }
 
-/* === AVALIACOES / CARROSSEL === */
+/* === AVALIAÇÕES / CARROSSEL === */
 .avaliacoes {
   padding: 88px 0;
   background: var(--white);
@@ -299,7 +299,7 @@
   background: #ccc;
 }
 
-/* === SECTION CTA (botao ao final de cada secao) === */
+/* === SECTION CTA (botão ao final de cada seção) === */
 .section-cta {
   text-align: center;
   margin-top: 48px;

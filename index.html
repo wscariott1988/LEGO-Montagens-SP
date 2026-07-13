@@ -34,7 +34,7 @@
   <link rel="apple-touch-icon" href="Public/logo.png">
 
   <!-- Preload do logo (aparece no header imediatamente) -->
-  <link rel="preload" href="Public/logo.webp" as="image">
+  <link rel="preload" href="Public/logo-header.webp" as="image">
 
   <!-- ===== PRELOAD IMAGEM LCP (Largest Contentful Paint) ===== -->
   <link rel="preload" as="image" fetchpriority="high"
@@ -44,15 +44,6 @@
 
   <!-- ===== CSS CRITICO INLINE (Header + Hero — acima da dobra) ===== -->
   <style>
-    /* === FONT FACE (auto-hospedada) === */
-    @font-face {
-      font-family: "Inter";
-      src: url("Public/fonts/Inter.woff2") format("woff2");
-      font-display: optional;
-      font-weight: 100 900;
-      font-style: normal;
-    }
-
     /* === RESET === */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     img, svg { display: block; max-width: 100%; }
@@ -282,7 +273,7 @@
 
       <a href="#inicio" class="header__logo" aria-label="Lego Montagem de Móveis — Página Inicial">
         <img
-          src="Public/logo.webp"
+          src="Public/logo-header.webp"
           alt="Lego Montagem de Móveis"
           class="header__logo-img"
           width="180" height="60"
@@ -745,7 +736,7 @@
 
       <div class="footer__brand">
         <img
-          src="Public/logo.webp"
+          src="Public/logo-footer.webp"
           alt="Lego Montagem de Móveis"
           class="footer__logo-img"
           width="160" height="53"

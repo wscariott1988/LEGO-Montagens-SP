@@ -15,7 +15,7 @@
 .brands__label {
   font-size: 11px;
   font-weight: 700;
-  color: #bbb;
+  color: #767676;
   letter-spacing: 1.8px;
   text-transform: uppercase;
   text-align: center;
@@ -30,7 +30,7 @@
 .brands__list span {
   font-size: 13.5px;
   font-weight: 700;
-  color: #ccc;
+  color: #888888;
   letter-spacing: .4px;
   white-space: nowrap;
 }
@@ -53,7 +53,7 @@
   margin-bottom: 14px;
 }
 .section-tag--light {
-  background: rgba(255,255,255,.15);
+  background: rgba(255,255,255,.25);
   color: white;
 }
 .section-title {
@@ -98,7 +98,7 @@
   background: var(--orange);
   border-color: var(--orange);
 }
-.card--featured .card__text { color: rgba(255,255,255,.85); }
+.card--featured .card__text { color: white; }
 .card__icon {
   width: 56px; height: 56px;
   border-radius: 13px;
@@ -283,19 +283,29 @@
   margin-top: 32px;
 }
 .carousel__dot {
-  width: 10px; height: 10px;
+  width: 44px; height: 44px;
   border-radius: 50%;
   border: none;
-  background: var(--border);
+  background: transparent;
   cursor: pointer;
   transition: background .25s, transform .2s;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.carousel__dot--active {
+.carousel__dot::after {
+  content: "";
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: background .25s, transform .2s;
+}
+.carousel__dot--active::after {
   background: var(--orange);
   transform: scale(1.25);
 }
-.carousel__dot:hover:not(.carousel__dot--active) {
+.carousel__dot:hover:not(.carousel__dot--active)::after {
   background: #ccc;
 }
 
@@ -345,7 +355,7 @@
 }
 .cta-sec__sub {
   font-size: 16px;
-  color: rgba(255,255,255,.6);
+  color: rgba(255,255,255,.8);
   margin-bottom: 26px;
   line-height: 1.7;
 }
@@ -405,7 +415,7 @@
 .cta-stat__l {
   display: block;
   font-size: 12.5px;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.7);
   margin-top: 4px;
 }
 
@@ -413,7 +423,7 @@
 .footer {
   background: #171717;
   padding: 64px 0 0;
-  color: rgba(255,255,255,.65);
+  color: rgba(255,255,255,.85);
 }
 .footer__grid {
   display: grid;
@@ -447,7 +457,7 @@
 }
 .footer__col ul { display: flex; flex-direction: column; gap: 10px; }
 .footer__col li { font-size: 14px; line-height: 1.5; }
-.footer__col a  { color: rgba(255,255,255,.55); transition: color .2s; }
+.footer__col a  { color: rgba(255,255,255,.75); transition: color .2s; }
 .footer__col a:hover { color: var(--orange); }
 
 .footer__bottom {
@@ -456,11 +466,11 @@
   justify-content: space-between;
   padding: 18px 0;
   font-size: 12.5px;
-  color: rgba(255,255,255,.35);
+  color: rgba(255,255,255,.8);
   flex-wrap: wrap;
   gap: 8px;
 }
-.footer__bottom a { color: rgba(255,255,255,.35); transition: color .2s; }
+.footer__bottom a { color: rgba(255,255,255,.8); transition: color .2s; }
 .footer__bottom a:hover { color: var(--orange); }
 
 /* === WHATSAPP FLUTUANTE === */
